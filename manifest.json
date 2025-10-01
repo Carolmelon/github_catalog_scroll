@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "GitHub Catalog Enhancer",
+    "version": "1.2.0",
+    "description": "Enhance GitHub repository navigation with automatic catalog numbering and overflow scroll management for better reading experience",
+    "author": "Li Rongsheng",
+    "homepage_url": "https://github.com/yourusername/github-catalog-scroll",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "设置overflow-y滚动"
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
