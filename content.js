@@ -276,10 +276,15 @@ function applyCatalogColors(selector) {
     
     // 定义适合夜间模式的颜色方案
     const colors = {
-        'top-level': 'rgba(59, 130, 246, 0.15)',    // 蓝色 - 顶级
-        'first-level': 'rgba(16, 185, 129, 0.12)',  // 绿色 - 一级
-        'second-level': 'rgba(245, 158, 11, 0.12)', // 橙色 - 二级
-        'third-level': 'rgba(139, 92, 246, 0.12)'   // 紫色 - 三级
+        // 'top-level': 'rgba(59, 130, 246, 0.15)',    // 蓝色 - 顶级
+        // 'first-level': 'rgba(16, 185, 129, 0.12)',  // 绿色 - 一级
+        // 'second-level': 'rgba(245, 158, 11, 0.12)', // 橙色 - 二级
+        // 'third-level': 'rgba(139, 92, 246, 0.12)'   // 紫色 - 三级
+
+        'top-level': 'rgba(59, 130, 246, 0.4)',    // 蓝色(alpha=0.4) - 顶级
+        'first-level': 'rgba(59, 130, 246, 0.3)',  // 蓝色(alpha=0.3) - 一级
+        'second-level': 'rgba(59, 130, 246, 0.2)', // 蓝色(alpha=0.2) - 二级
+        'third-level': 'rgba(59, 130, 246, 0.1)',   // 蓝色(alpha=0.1) - 三级
     };
     
     const textDivs = catalogElement.querySelectorAll('.prc-ActionList-ItemLabel-TmBhn > div[data-level-class]');
