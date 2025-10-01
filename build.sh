@@ -9,6 +9,7 @@ echo "🚀 开始打包Chrome扩展..."
 EXTENSION_NAME="github-catalog-enhancer"
 VERSION=$(grep '"version"' manifest.json | sed 's/.*"version": "\(.*\)".*/\1/')
 BUILD_DIR="build"
+ICON_DIR="${BUILD_DIR}/icons"
 ZIP_NAME="${EXTENSION_NAME}-v${VERSION}.zip"
 
 # 清理旧的构建文件
@@ -25,7 +26,7 @@ cp manifest.json "$BUILD_DIR/"
 cp content.js "$BUILD_DIR/"
 cp popup.html "$BUILD_DIR/"
 cp popup.js "$BUILD_DIR/"
-cp -r icons/ "$BUILD_DIR/"
+cp -r icons/ "$ICON_DIR/"
 
 # 复制文档文件 (可选，用于审核)
 cp README.md "$BUILD_DIR/" 2>/dev/null || echo "⚠️  README.md 不存在，跳过"

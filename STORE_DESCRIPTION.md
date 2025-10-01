@@ -80,7 +80,7 @@ GitHub Catalog Enhancer 是一个轻量级的Chrome扩展，专门为提升GitHu
 
 遇到问题或有功能建议？
 - 📧 通过Chrome Web Store评论区反馈
-- 🐛 在GitHub仓库提交Issue
+- 🐛 在GitHub仓库(<a href="https://github.com/Carolmelon/github_catalog_scroll">https://github.com/Carolmelon/github_catalog_scroll</a>)提交Issue
 - ⭐ 如果喜欢这个扩展，请给我们五星好评！
 
 ---

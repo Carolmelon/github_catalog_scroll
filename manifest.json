@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Enhance GitHub repository navigation with automatic catalog numbering and overflow scroll management for better reading experience",
     "author": "Li Rongsheng",
-    "homepage_url": "https://github.com/yourusername/github-catalog-scroll",
+    "homepage_url": "https://github.com/Carolmelon/github_catalog_scroll",
     "permissions": [
       "activeTab",
       "scripting",
